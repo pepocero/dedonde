@@ -5,6 +5,7 @@ import ProductResult from './components/ProductResult.tsx'
 import SearchBar from './components/SearchBar.tsx'
 import Gs1PrefixNotice from './components/Gs1PrefixNotice.tsx'
 import Gs1CountryHint from './components/Gs1CountryHint.tsx'
+import InstallAppButton from './components/InstallAppButton.tsx'
 import { CameraIcon, LogoMark } from './components/Icons.tsx'
 import { useProductLookup } from './hooks/useProductLookup.ts'
 import type { ErrorKind } from './services/openFoodFacts.ts'
@@ -70,6 +71,7 @@ export default function App() {
           <p className="eyebrow">DeDónde</p>
           <h1>De Dónde</h1>
         </div>
+        <InstallAppButton />
       </header>
 
       {status === 'loading' ? <Loading /> : null}
